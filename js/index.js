@@ -232,19 +232,19 @@ function search_by_websites(value)
     console.log(i);
     if(a[i].firstElementChild.nextElementSibling.innerHTML.includes(value))
     {
-        a[i].style.display="block";
-        console.log("yes")
+        a[i].style.visibility="visible";
+        console.log("yes");
     }
     else{
-        a[i].style.display="none";
-        console.log("no")
+        a[i].style.visibility="hidden";
+        console.log("no");
     }
    }
    if(value=="")
    {
     for(let i=0;i<a.length;i++)
     {
-        a[i].style.display="block";
+        a[i].style.visibility="visible";
     }
    }
 }
